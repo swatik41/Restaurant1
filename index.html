@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swati Spice Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Swati Spice Hub</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#cart">Cart</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero" id="home">
+    <h2>Welcome to Swati Spice Hub</h2>
+    <p>Where Taste Meets Tradition</p>
+  </div>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <p>Delicious dishes crafted with love and authentic spices.</p>
+  </section>
+  <!-- Menu Section -->
+<section id="menu">
+  <h2>Our Menu</h2>
+  <div class="menu-grid">
+
+
+    <div class="card">
+      <img src="https://palatesdesire.com/wp-content/uploads/2022/09/Mysore-masala-dosa-recipe@palates-desire.jpg" alt="Masala Dosa">
+      <h3>Masala Dosa <span class="price">₹120</span></h3>
+       <button onclick="addToCart('Masala Dosa',120)">Add to Cart</button>
+      <p>Crispy dosa with spicy potato filling and chutney.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://th.bing.com/th/id/R.aed83171188e6cf134726393a09912ff?rik=cglulDUn%2f4BGhw&riu=http%3a%2f%2ffarm8.staticflickr.com%2f7167%2f6498477017_848c40ca57_o.jpg&ehk=GdL%2bq%2fyY1ilRDOWSHtU7MAUrq%2b%2fYo%2fTxiC%2b6WFoHfBQ%3d&risl=&pid=ImgRaw&r=0" alt="Paneer Butter Masala">
+      <h3>Paneer Butter Masala <span class="price">₹180</span></h3>
+       <button onclick="addToCart('Paneer Butter Masala',180)">Add to Cart</button>
+      <p>Rich tomato gravy with soft paneer cubes.</p>
+    </div>
+
+    <div class="card">
+      <img src="data:image/webp;base64,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" alt="Thali Special">
+      <h3>Thali Special <span class="price">₹250</span></h3>
+       <button onclick="addToCart('Thali Special',250)">Add to Cart</button>
+      <p>Assorted curries, dal, rice, chapati, and dessert.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg" alt="Chicken Biryani">
+      <h3>Chicken Biryani <span class="price">₹220</span></h3>
+       <button onclick="addToCart('Chicken Biryani',220)">Add to Cart</button>
+      <p>Fragrant basmati rice cooked with tender chicken and spices.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.YfQ9lSAWk8NI_-hgqjuNzQHaFj?w=193&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Veg Fried Rice">
+      <h3>Veg Fried Rice <span class="price">₹150</span></h3>
+       <button onclick="addToCart('Fried Rice',150)">Add to Cart</button>
+      <p>Stir-fried rice with fresh vegetables and Indian spices.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.RhwWV1u1HfO4ZpM6_7n85AHaE5?w=278&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Gobi Manchurian">
+      <h3>Gobi Manchurian <span class="price">₹160</span></h3>
+       <button onclick="addToCart('Gobi Manchurian',160)">Add to Cart</button>
+      <p>Crispy cauliflower tossed in tangy Indo-Chinese sauce.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.GUmnNFy2LGo3HyiJ1QPwkwHaLH?w=208&h=305&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Butter Naan">
+      <h3>Butter Naan <span class="price">₹40</span></h3>
+      <button onclick="addToCart('Butter Naan',40)">Add to Cart</button>
+      <p>Soft naan brushed with butter, perfect with curries.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.iy_MDlcGXishJLGVVTKULwHaLH?w=121&h=181&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Gulab Jamun">
+      <h3>Gulab Jamun <span class="price">₹80 </span></h3>
+      <button onclick="addToCart('Gulab Jamun',80)">Add to Cart</button>
+      <p>Soft and sweet milk dumplings soaked in sugar syrup.</p>
+    </div>
+
+  </div>
+</section>
+
+  </div>
+</section>
+
+
+  
+</body>
+</html>
+
+
+  <div class="menu">
+    <div class="dish">
+      <h3>Paneer Butter Masala - ₹250</h3>
+      <button onclick="addToCart('Paneer Butter Masala', 250)">Add to Cart</button>
+    </div>
+    <div class="dish">
+      <h3>Veg Biryani - ₹200</h3>
+      <button onclick="addToCart('Veg Biryani', 200)">Add to Cart</button>
+    </div>
+    <div class="dish">
+      <h3>Chicken Curry - ₹300</h3>
+      <button onclick="addToCart('Chicken Curry', 300)">Add to Cart</button>
+    </div>
+    <div class="dish">
+      <h3>Gulab Jamun - ₹100</h3>
+      <button onclick="addToCart('Gulab Jamun', 100)">Add to Cart</button>
+    </div>
+  </div>
+
+  <h2>Your Order</h2>
+  <div id="cart">
+    <p>No items in the cart</p>
+  </div>
+  <h3>Total: ₹<span id="total">0</span></h3>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Us</h2>
+    <div class="about-container">
+        <div class="about-text">
+            <p>
+                At <strong>Swati Spice Hub</strong>, we believe that food is not just about taste –  
+                it’s about tradition, passion, and togetherness.  
+            </p>
+            <p>
+                Our journey began with a love for authentic Indian cooking, using secret family recipes and  
+                handpicked spices to create flavors that remind you of home.  
+            </p>
+            <p>
+                Whether you are here for a hearty Biryani, crispy Dosa, or a sweet Gulab Jamun,  
+                we promise to serve you food that is fresh, flavorful, and full of love.  
+            </p>
+            <p>
+                Join us, and let’s make every meal a special memory!  
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D " alt="About Swati Spice Hub">
+        </div>
+    </div>
+</section>
+
+  </section>
+
+<!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Swati Spice Hub. All Rights Reserved.</p>
+  </footer>
